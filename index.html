@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP 2 - JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+
+  <body >
+
+    <header>
+      <div class="d-flex mb-4 text-bg-secondary p-3 text-center">
+        <div class="p-2 flex-grow-1">Conf Bs As</div>
+        <div class="p-2">La conferencia</div>
+        <div class="p-2">Los oradores</div>
+        <div class="p-2">El lugar y la fecha</div>
+        <div class="p-2">Conviertete en orador</div>
+        <div class="p-2 text-success fw-bold">Comprar tickets</div>
+      </div>
+      
+    </header>
+
+
+    <main class="d-flex justify-content-center">
+     
+        <section class="form-group col-6">
+              
+          <div class="col-12 text-center ">
+
+            <div class="row mb-3 justify-content-around">
+              <div class="border border-primary" style="max-width: 13rem;">
+                <h4>Estudiante</h4>
+                <h6>Tienen descuento</h6>
+                <h4>80%</h4>
+                <h6 class="fw-light">*tienen que presentar documentacion</h6>
+              </div>
+            
+              <div class="border border-success" style="max-width: 13rem;">
+                <h4>Trainee</h4>
+                <h6>Tienen descuento</h6>
+                <h4>50%</h4>
+                <h6 class="fw-light">*tienen que presentar documentacion</h6>
+              </div>
+
+              <div class="border border-warning" style="max-width: 13rem;">
+                <h4>Junior</h4>
+                <h6>Tienen descuento</h6>
+                <h4>15%</h4>
+                <h6 class="fw-light">*tienen que presentar documentacion</h6>
+              </div>                       
+
+            </div>
+
+            <h6>VENTA</h6>
+            <H2>VALOR DE TICKET $200</H2>
+          
+          </div>
+
+          <form>
+
+              <div class="row">
+                <div class="form-group col-6 pt-2 pb-2">
+                  <input type="text" class="form-control" placeholder="nombre">
+                </div>
+
+                <div class="form-group col-6 pt-2">
+                  <input type="text" class="form-control" placeholder="apellido">
+                </div>
+
+                <div class="form-group col-12 pb-2">
+                  <input type="text" class="form-control" placeholder="correo">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-6 pb-2">
+                  <input type="text" id="entradasIngresadas" class="form-control" placeholder="cantidad">
+                </div>
+
+                <div class="col-6">
+                  <select id= "categoriaSeleccionada" class="form-select" aria-label="Default select example">
+                    <option selected value="estudiante"> Estudiante</option>
+                    <option value="trainee">Trainee</option>
+                    <option value="junior">Junior</option>
+                  </select>
+                </div>
+            </div>
+
+            <div>
+              <div id="totalCompra" class="alert alert-primary col-12">Total a Pagar $</div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-6">
+                <button type="reset" onclick="location.reload()" class="btn btn-success col-12">Borrar</button>
+            </div>
+
+            <div class="col-6">
+              <button type="button" id="botonCalcular" onclick="calculo()" class="btn btn-success col-12">Resumen</button>                   
+            </div>
+          </div>
+
+        </form>
+
+      </section>
+
+  </main>
+
+  <footer class="d-flex justify-content-center mt-2 text-bg-secondary">
+    <div class="p-4">Preguntas Frecuentes</div>
+    <div class="p-4"> Contactanos</div>
+    <div class="p-4">Prensa</div>
+    <div class="p-4">Conferencias</div>
+    <div class="p-4">Terminos y condiciones</div>
+    <div class="p-4">Privacidad</div>
+    <div class="p-4">Estudiantes</div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
